@@ -15,5 +15,5 @@ for atag in soup.find_all("a"):
     if text and url and "/fea/" in url:
         result.append({"text": text, "url": url})
 
-with open("result.json", "w", encoding="utf-8") as f:
+with open("text-url.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(result, ensure_ascii=False))
